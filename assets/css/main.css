@@ -2563,6 +2563,7 @@ section {
   font-size: 14px;
   padding: 80px 0 60px 0;
   position: relative;
+  padding-top: 10rem;
 }
 
 .footer:before {
@@ -2570,6 +2571,7 @@ section {
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
   inset: 0;
+  opacity: 70%;
 }
 
 .footer .footer-content .footer-info {
