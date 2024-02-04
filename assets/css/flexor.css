@@ -48,7 +48,8 @@
   }
   
   .values .card:hover .card-body {
-    background: #ff5821;
+  background: #c13a3c;
+ 
   }
   
   .values .card:hover .read-more a,

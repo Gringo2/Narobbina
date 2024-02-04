@@ -18,10 +18,7 @@ customElements.define('solution-component', class extends HTMLElement {
 
 <section id="speakers">
 <div class="container" data-aos="fade-up">
-  <div class="section-header">
-    <h2>We Provide Solitions for Wide Range of Bussiness Scenarios.</h2>
-    <p>Here are some of our solutions</p>
-  </div>
+  
 
   <div class="row">
     <div class="col-lg-4 col-md-6">
@@ -59,39 +56,7 @@ customElements.define('solution-component', class extends HTMLElement {
         </div>
       </div>
     </div>
-    <div class="col-lg-4 col-md-6">
-      <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-        <img src="assets/img/speakers/4.jpg" alt="Speaker 4" class="img-fluid">
-        <div class="details">
-          <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Jack Christiansen</a></h3>
-          <div class="social">
-          <a href="">ReadMore</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6">
-      <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-        <img src="assets/img/speakers/5.jpg" alt="Speaker 5" class="img-fluid">
-        <div class="details">
-          <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Alejandrin Littel</a></h3>
-          <div class="social">
-          <a href="">ReadMore</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6">
-      <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-        <img src="assets/img/speakers/6.jpg" alt="Speaker 6" class="img-fluid">
-        <div class="details">
-          <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Willow Trantow</a></h3>
-          <div class="social">
-          <a href="">ReadMore</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    
   </div>
 </div>
 
@@ -399,7 +364,7 @@ connectedCallback() {
 
 }
 });
-customElements.define('-component', class extends HTMLElement {
+customElements.define('s-component', class extends HTMLElement {
   constructor() {
     super(); // always call super() first in the constructor.
 
