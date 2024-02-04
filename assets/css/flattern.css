@@ -1,0 +1,63 @@
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  .section-bg {
+    background-color: #f6f3f2;
+  }
+  
+  .section-title {
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  
+  .section-title h2 {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: #65534c;
+  }
+  
+  .section-title h2 strong {
+    font-weight: 700;
+  }
+  
+  .section-title p {
+    margin-bottom: 0;
+  }
+
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+.clients .clients-wrap {
+    border-top: 1px solid #f1eeed;
+    border-left: 1px solid #f1eeed;
+  }
+  
+  .clients .client-logo {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #f1eeed;
+    border-bottom: 1px solid #f1eeed;
+    overflow: hidden;
+    background: #fff;
+    height: 100px;
+  }
+  
+  .clients .client-logo img {
+    transition: all 0.3s ease-in-out;
+    height: 36px;
+    filter: grayscale(100%);
+  }
+  
+  .clients .client-logo:hover img {
+    filter: none;
+    transform: scale(1.1);
+  }

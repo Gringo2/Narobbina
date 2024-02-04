@@ -1,0 +1,177 @@
+/* Sections Header
+--------------------------------*/
+.section-header {
+    margin-bottom: 60px;
+    position: relative;
+    padding-bottom: 20px;
+  }
+  
+  .section-header::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 5px;
+    background: #c13a3c;
+    bottom: 0;
+    left: calc(50% - 25px);
+  }
+  
+  .section-header h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .section-header p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #9195a2;
+  }
+  
+  .section-with-bg {
+    background-color: #f6f7fd;
+  }
+
+/*--------------------------------------------------------------
+# Speakers Section
+--------------------------------------------------------------*/
+
+#speakers {
+    padding: 60px 0 30px 0;
+  }
+  
+  #speakers .speaker {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  
+  #speakers .speaker .details {
+    background: rgba(6, 12, 34, 0.76);
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    right: 0;
+    text-align: center;
+    padding-top: 10px;
+    transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  
+  #speakers .speaker .details h3 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  #speakers .speaker .details p {
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+  
+  #speakers .speaker .details .social {
+    height: 40px;
+  }
+  
+  #speakers .speaker .details .social i {
+    line-height: 0;
+    margin: 0 2px;
+  }
+  
+  #speakers .speaker .details a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #speakers .speaker .details a:hover {
+    color: #c13a3c;
+  }
+  
+  #speakers .speaker:hover .details {
+    bottom: 0;
+  }
+  
+  #speakers-details {
+    padding: 60px 0;
+  }
+  
+  #speakers-details .details h2 {
+    color: #112363;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  #speakers-details .details .social {
+    margin-bottom: 15px;
+  }
+  
+  #speakers-details .details .social a {
+    background: #e9edfb;
+    color: #112363;
+    line-height: 1;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #speakers-details .details .social a:hover {
+    background: #c13a3c;
+    color: #fff;
+  }
+  
+  #speakers-details .details .social a i {
+    font-size: 16px;
+    line-height: 0;
+  }
+  
+  #speakers-details .details p {
+    color: #112363;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  /*--------------------------------------------------------------
+# Sponsors Section
+--------------------------------------------------------------*/
+#supporters {
+  padding: 60px 0;
+}
+
+#supporters .supporters-wrap {
+  border-top: 1px solid #e0e5fa;
+  border-left: 1px solid #e0e5fa;
+  margin-bottom: 30px;
+}
+
+#supporters .supporter-logo {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #e0e5fa;
+  border-bottom: 1px solid #e0e5fa;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.5);
+  height: 160px;
+}
+
+#supporters .supporter-logo:hover img {
+  transform: scale(1.2);
+}
+
+#supporters img {
+  transition: all 0.4s ease-in-out;
+}
