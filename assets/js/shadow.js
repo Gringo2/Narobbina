@@ -25,7 +25,7 @@ customElements.define('solution-component', class extends HTMLElement {
       <div class="speaker" data-aos="fade-up" data-aos-delay="100">
         <img src="assets/img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">
         <div class="details">
-          <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Brenden Legros</a></h3>
+          <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Apartments</a></h3>
           
           <div class="social">
             <a href="">ReadMore</a>
@@ -37,7 +37,7 @@ customElements.define('solution-component', class extends HTMLElement {
       <div class="speaker" data-aos="fade-up" data-aos-delay="200">
         <img src="assets/img/speakers/2.jpg" alt="Speaker 2" class="img-fluid">
         <div class="details">
-          <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Hubert Hirthe</a></h3>
+          <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Buildings</a></h3>
           
           <div class="social">
             <a href="">ReadMore</a>
@@ -49,13 +49,156 @@ customElements.define('solution-component', class extends HTMLElement {
       <div class="speaker" data-aos="fade-up" data-aos-delay="300">
         <img src="assets/img/speakers/3.jpg" alt="Speaker 3" class="img-fluid">
         <div class="details">
-          <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Cole Emmerich</a></h3>
+          <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Hospitals</a></h3>
           <div class="social">
           <a href="">ReadMore</a>
           </div>
         </div>
       </div>
     </div>
+    
+  </div>
+</div>
+
+</section>
+      
+  </body>
+  `;
+}
+connectedCallback() {
+  while (this.childNodes.length > 0) {
+      this.shadowRoot.appendChild(this.childNodes[0]);
+  }
+}
+});
+customElements.define('solutions-component', class extends HTMLElement {
+  constructor() {
+    super(); // always call super() first in the constructor.
+
+        // Attach a shadow root to <fancy-tabs>.
+  const shadowRoot = this.attachShadow({mode: 'open'});
+  shadowRoot.innerHTML = `
+  <body class="one">
+  <head>
+  <link rel="stylesheet" href="./assets/css/solution.css"/>
+  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  </head>
+    
+  <!-- 
+  - #Solutions
+-->
+
+<section id="speakers">
+<div class="container" data-aos="fade-up">
+  
+
+  <div class="row">
+    <div class="col-lg-4 col-md-6">
+      <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">
+        <div class="details">
+          <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Appartments</a></h3>
+          
+          <div class="social">
+            <a href="">ReadMore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+        <img src="assets/img/speakers/2.jpg" alt="Speaker 2" class="img-fluid">
+        <div class="details">
+          <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Buildings</a></h3>
+          
+          <div class="social">
+            <a href="">ReadMore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+        <img src="assets/img/speakers/3.jpg" alt="Speaker 3" class="img-fluid">
+        <div class="details">
+          <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Hospitals</a></h3>
+          <div class="social">
+          <a href="">ReadMore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+        <img src="assets/img/speakers/4.jpg" alt="Speaker 3" class="img-fluid">
+        <div class="details">
+          <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Hotels</a></h3>
+          <div class="social">
+          <a href="">ReadMore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+        <img src="assets/img/speakers/5.jpg" alt="Speaker 3" class="img-fluid">
+        <div class="details">
+          <h3 style="padding: 7px 0px;"><a href="speaker-details.html">House</a></h3>
+          <div class="social">
+          <a href="">ReadMore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+        <img src="assets/img/speakers/6.jpg" alt="Speaker 3" class="img-fluid">
+        <div class="details">
+          <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Offices</a></h3>
+          <div class="social">
+          <a href="">ReadMore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+        <img src="assets/img/speakers/7.jpg" alt="Speaker 3" class="img-fluid">
+        <div class="details">
+          <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Shopping Mall</a></h3>
+          <div class="social">
+          <a href="">ReadMore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+        <img src="assets/img/speakers/8.jpg" alt="Speaker 3" class="img-fluid">
+        <div class="details">
+          <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Smart Class</a></h3>
+          <div class="social">
+          <a href="">ReadMore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+    <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+      <img src="assets/img/speakers/9.jpg" alt="Speaker 3" class="img-fluid">
+      <div class="details">
+        <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Warehouse</a></h3>
+        <div class="social">
+        <a href="">ReadMore</a>
+        </div>
+      </div>
+    </div>
+  </div>
     
   </div>
 </div>
@@ -178,13 +321,13 @@ customElements.define('reviews-component', class extends HTMLElement {
     <div class="reviews-area">
       <div class="row g-0">
         <div class="col-lg-6">
-          <img src="assets/img/about/2.jpg" alt="" class="img-fluid">
+          <img src="assets/img/about/2.png" alt="" class="img-fluid">
         </div>
         <div class="col-lg-6 work-right-text d-flex align-items-center">
           <div class="px-5 py-5 py-lg-0">
             <h2>working with us</h2>
-            <h5>Web Design, Ready Home, Construction and Co-operate Outstanding Buildings.</h5>
-            <a href="#contact" class="ready-btn scrollto">Contact us</a>
+            <h5>Our clients can rely on our trusted team of IT professionals to provide superior end user device management support.</h5>
+            <a href="#contact" class="about-bt scrollto">Call us</a>
           </div>
         </div>
       </div>
@@ -311,7 +454,7 @@ customElements.define('services-component', class extends HTMLElement {
           <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <div class="card" style="background-image: url(assets/img/values-1.jpg);">
               <div class="card-body">
-                <h5 class="card-title"><a href="">Our Mission</a></h5>
+                <h5 class="card-title"><a href="">Security services</a></h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
                 <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
               </div>
@@ -320,7 +463,7 @@ customElements.define('services-component', class extends HTMLElement {
           <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="100">
             <div class="card" style="background-image: url(assets/img/values-2.jpg);">
               <div class="card-body">
-                <h5 class="card-title"><a href="">Our Plan</a></h5>
+                <h5 class="card-title"><a href="">Safety services</a></h5>
                 <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem.</p>
                 <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
               </div>
@@ -330,7 +473,7 @@ customElements.define('services-component', class extends HTMLElement {
           <div class="col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="200">
             <div class="card" style="background-image: url(assets/img/values-3.jpg);">
               <div class="card-body">
-                <h5 class="card-title"><a href="">Our Vision</a></h5>
+                <h5 class="card-title"><a href="">Access control system</a></h5>
                 <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores.</p>
                 <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
               </div>
@@ -339,7 +482,7 @@ customElements.define('services-component', class extends HTMLElement {
           <div class="col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="300">
             <div class="card" style="background-image: url(assets/img/values-4.jpg);">
               <div class="card-body">
-                <h5 class="card-title"><a href="">Our Care</a></h5>
+                <h5 class="card-title"><a href="">Satellite TV networking</a></h5>
                 <p class="card-text">Nostrum eum sed et autem dolorum perspiciatis. Magni porro quisquam laudantium voluptatem.</p>
                 <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
               </div>

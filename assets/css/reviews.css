@@ -1,3 +1,25 @@
+.about-bt{
+  padding: 8px 30px 9px 30px;
+  color: #fff;
+  background: #1b1b1b;
+  border-radius: 50px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid #e03a3c;
+  text-decoration: none;
+}
+
+.about-bt:hover {
+  background: #e35052;
+  background: #e03a3c;
+  color: white;
+}
+
+
 /*--------------------------------------------------------------
 # Review
 --------------------------------------------------------------*/
