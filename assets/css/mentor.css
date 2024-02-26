@@ -62,12 +62,12 @@
   }
   
   .courses .course-content h3 a {
-    color: #37423b;
+    color: #c13a3c;
     transition: 0.3s;
   }
   
   .courses .course-content h3 a:hover {
-    color: #5fcf80;
+    color: #d34345;
   }
   
   .courses .course-content p {

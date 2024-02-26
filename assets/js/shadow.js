@@ -455,7 +455,7 @@ customElements.define('services-component', class extends HTMLElement {
             <div class="card" style="background-image: url(assets/img/security.jpg);">
               <div class="card-body">
                 <h5 class="card-title"><a href="">Security services</a></h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+                <p class="card-text">Our security solutions are meticulously designed to safeguard your property, assets, and personnel against a myriad of potential threats. Through a combination of advanced technology, strategic planning, and proactive monitoring, we offer a comprehensive array of security measures tailored to your unique requirements.</p>
                 <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
               </div>
             </div>
@@ -464,7 +464,7 @@ customElements.define('services-component', class extends HTMLElement {
             <div class="card" style="background-image: url(assets/img/safety.jpg);">
               <div class="card-body">
                 <h5 class="card-title"><a href="">Safety services</a></h5>
-                <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem.</p>
+                <p class="card-text">At Narobbina, we prioritize the safety and well-being of everyone within your premises. Our safety services encompass a wide range of initiatives aimed at identifying and mitigating hazards, promoting compliance with safety regulations, and fostering a culture of safety awareness among occupants and visitors. </p>
                 <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
               </div>
             </div>
@@ -474,7 +474,7 @@ customElements.define('services-component', class extends HTMLElement {
             <div class="card" style="background-image: url(assets/img/access.jpg);">
               <div class="card-body">
                 <h5 class="card-title"><a href="">Access control system</a></h5>
-                <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores.</p>
+                <p class="card-text">Controlling access to restricted areas is essential for maintaining security and confidentiality. Our access control systems offer robust solutions for managing entry permissions, monitoring access activities, and preventing unauthorized entry. </p>
                 <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
               </div>
             </div>
@@ -483,7 +483,7 @@ customElements.define('services-component', class extends HTMLElement {
             <div class="card" style="background-image: url(assets/img/Networking.jpg);">
               <div class="card-body">
                 <h5 class="card-title"><a href="">Satellite TV networking</a></h5>
-                <p class="card-text">Nostrum eum sed et autem dolorum perspiciatis. Magni porro quisquam laudantium voluptatem.</p>
+                <p class="card-text">Enhance your entertainment experience with our cutting-edge satellite TV networking solutions. Whether you're a residential homeowner, a commercial establishment, or a hospitality provider, we offer comprehensive services to deliver high-quality satellite TV programming with unparalleled clarity and reliability</p>
                 <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
               </div>
             </div>
