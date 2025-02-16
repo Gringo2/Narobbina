@@ -27,9 +27,7 @@ customElements.define('solution-component', class extends HTMLElement {
         <div class="details">
           <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Apartments</a></h3>
           
-          <div class="social">
-            <a href="">ReadMore</a>
-          </div>
+         
         </div>
       </div>
     </div>
@@ -39,9 +37,7 @@ customElements.define('solution-component', class extends HTMLElement {
         <div class="details">
           <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Buildings</a></h3>
           
-          <div class="social">
-            <a href="">ReadMore</a>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -50,9 +46,7 @@ customElements.define('solution-component', class extends HTMLElement {
         <img src="assets/img/speakers/3.jpg" alt="Speaker 3" class="img-fluid">
         <div class="details">
           <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Hospitals</a></h3>
-          <div class="social">
-          <a href="">ReadMore</a>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -100,9 +94,10 @@ customElements.define('solutions-component', class extends HTMLElement {
         <div class="details">
           <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Appartments</a></h3>
           
-          <div class="social">
+         <!-- <div class="social">
             <a href="">ReadMore</a>
           </div>
+          -->
         </div>
       </div>
     </div>
@@ -112,9 +107,10 @@ customElements.define('solutions-component', class extends HTMLElement {
         <div class="details">
           <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Buildings</a></h3>
           
-          <div class="social">
+         <!-- <div class="social">
             <a href="">ReadMore</a>
           </div>
+        -->
         </div>
       </div>
     </div>
@@ -123,9 +119,11 @@ customElements.define('solutions-component', class extends HTMLElement {
         <img src="assets/img/speakers/3.jpg" alt="Speaker 3" class="img-fluid">
         <div class="details">
           <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Hospitals</a></h3>
-          <div class="social">
+
+         <!-- <div class="social">
           <a href="">ReadMore</a>
           </div>
+          -->
         </div>
       </div>
     </div>
@@ -135,9 +133,10 @@ customElements.define('solutions-component', class extends HTMLElement {
         <img src="assets/img/speakers/4.jpg" alt="Speaker 3" class="img-fluid">
         <div class="details">
           <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Hotels</a></h3>
-          <div class="social">
+          <!-- <div class="social">
           <a href="">ReadMore</a>
           </div>
+          -->
         </div>
       </div>
     </div>
@@ -147,9 +146,9 @@ customElements.define('solutions-component', class extends HTMLElement {
         <img src="assets/img/speakers/5.jpg" alt="Speaker 3" class="img-fluid">
         <div class="details">
           <h3 style="padding: 7px 0px;"><a href="speaker-details.html">House</a></h3>
-          <div class="social">
+          <!-- <div class="social">
           <a href="">ReadMore</a>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -159,9 +158,10 @@ customElements.define('solutions-component', class extends HTMLElement {
         <img src="assets/img/speakers/6.jpg" alt="Speaker 3" class="img-fluid">
         <div class="details">
           <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Offices</a></h3>
-          <div class="social">
+          <!-- <div class="social">
           <a href="">ReadMore</a>
           </div>
+          -->
         </div>
       </div>
     </div>
@@ -171,9 +171,10 @@ customElements.define('solutions-component', class extends HTMLElement {
         <img src="assets/img/speakers/7.jpg" alt="Speaker 3" class="img-fluid">
         <div class="details">
           <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Shopping Mall</a></h3>
-          <div class="social">
+          <!-- <div class="social">
           <a href="">ReadMore</a>
           </div>
+          -->
         </div>
       </div>
     </div>
@@ -182,9 +183,10 @@ customElements.define('solutions-component', class extends HTMLElement {
         <img src="assets/img/speakers/8.jpg" alt="Speaker 3" class="img-fluid">
         <div class="details">
           <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Smart Class</a></h3>
-          <div class="social">
+          <!-- <div class="social">
           <a href="">ReadMore</a>
           </div>
+          -->
         </div>
       </div>
     </div>
@@ -192,10 +194,11 @@ customElements.define('solutions-component', class extends HTMLElement {
     <div class="speaker" data-aos="fade-up" data-aos-delay="300">
       <img src="assets/img/speakers/9.jpg" alt="Speaker 3" class="img-fluid">
       <div class="details">
-        <h3 style="padding: 7px 0px;"><a href="speaker-details.html">Warehouse</a></h3>
-        <div class="social">
+        <h3 style="padding: 10px 0px;"><a href="speaker-details.html">Warehouse</a></h3>
+       <!-- <div class="social">
         <a href="">ReadMore</a>
         </div>
+        -->
       </div>
     </div>
   </div>
@@ -214,7 +217,6 @@ connectedCallback() {
   }
 }
 });
-
 customElements.define('clients-component', class extends HTMLElement {
   constructor() {
     super(); // always call super() first in the constructor.
@@ -269,19 +271,19 @@ customElements.define('clients-component', class extends HTMLElement {
             <img src="assets/img/supporters/5.png" class="img-fluid" alt="">
           </div>
         </div>
-
+<!--
         <div class="col-lg-3 col-md-4 col-xs-6">
           <div class="supporter-logo">
             <img src="assets/img/supporters/6.png" class="img-fluid" alt="">
           </div>
         </div>
-
+      -->   
         <div class="col-lg-3 col-md-4 col-xs-6">
-          <div class="supporter-logo">
+           <div class="supporter-logo">
             <img src="assets/img/supporters/7.png" class="img-fluid" alt="">
           </div>
         </div>
-
+       
         <div class="col-lg-3 col-md-4 col-xs-6">
           <div class="supporter-logo">
             <img src="assets/img/supporters/8.png" class="img-fluid" alt="">
@@ -470,7 +472,7 @@ customElements.define('services-component', class extends HTMLElement {
             </div>
 
           </div>
-          <div class="col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="200">
+          <!-- <div class="col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="200">
             <div class="card" style="background-image: url(assets/img/access.jpg);">
               <div class="card-body">
                 <h5 class="card-title"><a href="">Access control system</a></h5>
@@ -487,7 +489,7 @@ customElements.define('services-component', class extends HTMLElement {
                
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
 
       </div>

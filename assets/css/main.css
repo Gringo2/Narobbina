@@ -38,6 +38,13 @@ body {
   overflow-x: hidden;
 }
 
+@media (min-width: 1000px) {
+  .support {
+    display: none;
+  }
+  
+}
+
 a {
   color: var(--color-primary);
   text-decoration: none;
