@@ -620,23 +620,6 @@ h6 {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
@@ -1382,6 +1365,52 @@ section {
   border-color: var(--color-primary);
 }
 
+
+
+
+
+@media (max-width: 766px) {
+  #services .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+  }
+  
+  #services .box .icon {
+    margin-bottom: 20px;
+    width: 150px;
+  }
+  
+  #services .box .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  #services .box .description {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  
+  #services .box {
+    padding: 5px;
+  }
+
+  #services .box .icon {
+    margin: 0 auto 20px auto;
+  }
+}
+
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
@@ -1865,6 +1894,49 @@ section {
     position: absolute;
     top: 0;
     right: 0;
+  }
+}
+
+.about-img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media (max-width: 1200px) {
+  .about-img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 5px;
   }
 }
 
