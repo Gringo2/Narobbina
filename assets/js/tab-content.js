@@ -1046,12 +1046,11 @@ const styles = `
 
         /* Mobile Scrollable Tab Menu */
         .tab-menu-wrapper {
-            position: relative;
+            position: sticky;
+            top: 0;
             width: 100%;
             background: #fff;
             border-bottom: 2px solid #eee;
-            position: sticky;
-            top: 0;
             z-index: 100;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
@@ -1061,7 +1060,7 @@ const styles = `
             flex-wrap: nowrap;
             overflow-x: auto;
             gap: 0.75rem;
-            padding: 1rem;
+            padding: 0.75rem 1rem;
             background: #fff;
             scrollbar-width: none;
             -ms-overflow-style: none;
@@ -1069,7 +1068,9 @@ const styles = `
             scroll-behavior: smooth;
             white-space: nowrap;
             margin: 0;
-            scroll-padding: 1rem;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 60px;
         }
 
         .tab-buttons::-webkit-scrollbar {
@@ -1078,7 +1079,7 @@ const styles = `
 
         .tab-btn {
             flex: 0 0 auto;
-            padding: 0.75rem 1.5rem;
+            padding: 0.6rem 1.2rem;
             font-size: 0.95rem;
             border: none;
             background: transparent;
@@ -1088,7 +1089,11 @@ const styles = `
             border-radius: 25px;
             font-weight: 500;
             white-space: nowrap;
-            min-width: fit-content;
+            min-width: max-content;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .tab-btn.active {
@@ -1100,13 +1105,15 @@ const styles = `
         /* Tablet Styles */
         @media (max-width: 991px) {
             .tab-buttons {
-                padding: 0.75rem 1rem;
+                padding: 0.75rem;
                 gap: 0.5rem;
+                min-height: 55px;
             }
 
             .tab-btn {
-                padding: 0.75rem 1.25rem;
+                padding: 0.6rem 1.1rem;
                 font-size: 0.9rem;
+                height: 38px;
             }
         }
 
@@ -1117,30 +1124,29 @@ const styles = `
             }
 
             .tab-buttons {
-                padding: 0.75rem 1rem;
-                gap: 0.5rem;
-                overflow-x: scroll;
-                scroll-snap-type: none;
-                -webkit-overflow-scrolling: touch;
+                padding: 0.6rem 0.75rem;
+                gap: 0.4rem;
+                min-height: 50px;
             }
 
             .tab-btn {
-                padding: 0.75rem 1.25rem;
-                font-size: 0.9rem;
-                flex-shrink: 0;
-                min-width: auto;
+                padding: 0.5rem 1rem;
+                font-size: 0.85rem;
+                height: 36px;
             }
         }
 
         /* Small Mobile Styles */
         @media (max-width: 480px) {
             .tab-buttons {
-                padding: 0.75rem 0.75rem;
+                padding: 0.5rem 0.6rem;
+                min-height: 45px;
             }
 
             .tab-btn {
-                padding: 0.75rem 1.25rem;
-                font-size: 0.85rem;
+                padding: 0.5rem 0.9rem;
+                font-size: 0.8rem;
+                height: 34px;
             }
         }
 
@@ -1149,7 +1155,7 @@ const styles = `
             position: absolute;
             top: 0;
             height: 100%;
-            width: 40px;
+            width: 30px;
             pointer-events: none;
             opacity: 0;
             transition: opacity 0.3s ease;
