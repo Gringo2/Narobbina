@@ -52,6 +52,75 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  <style>
+    .solutions-tabs {
+      padding: 2rem 0;
+      background: #f8f9fa;
+    }
+
+    .tab-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      padding: 0 1rem;
+    }
+
+    .tab-button {
+      padding: 1rem 2rem;
+      background: #fff;
+      border: 2px solid #001f8d;
+      border-radius: 30px;
+      color: #001f8d;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .tab-button:hover {
+      background: #001f8d;
+      color: #fff;
+    }
+
+    .tab-button.active {
+      background: #001f8d;
+      color: #fff;
+    }
+
+    .tab-content {
+      min-height: 400px;
+      position: relative;
+    }
+
+    .loading-spinner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #001f8d;
+      font-size: 2rem;
+    }
+
+    .error-message {
+      text-align: center;
+      color: #dc3545;
+      padding: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .tab-buttons {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .tab-button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -103,26 +172,37 @@
 
   <main id="main">
      <!-- ======= Breadcrumbs ======= -->
-     <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/breadcrumbs-bg5.jpg');">
+     <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/hero-carousel/hero-carousel-1.jpg');">
       <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
         <h2>Solutions</h2>
+        
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>Security Solutions</li>
+          <li>Solutions</li>
         </ol>
 
       </div>
     </div><!-- End Breadcrumbs -->
 
-    <section>
-      <!-- <div class=" section-header">
-        <h2>Solutions</h2>
-        <p>Lorum Ipsum Dolor sit amet</p>
-      </div> -->
-      <solutions-component>
-      
-      </solutions-component>
+    <!-- ======= Solutions Tabs Section ======= -->
+    <section class="solutions-tabs">
+      <div class="container">
+     
+        <div class="tab-buttons" data-aos="fade-up" data-aos-delay="100">
+          <button class="tab-button active" data-tab="apartments">Smart Apartments</button>
+          <button class="tab-button" data-tab="homeSecurity">Home Security</button>
+          <button class="tab-button" data-tab="retail">Smart Retail</button>
+          <button class="tab-button" data-tab="warehouse">Smart Warehouse</button>
+          <button class="tab-button" data-tab="hotel">Smart Hotel</button>
+          <button class="tab-button" data-tab="school">Smart School</button>
+          <button class="tab-button" data-tab="healthcare">Healthcare</button>
+        </div>
+
+        <div id="tabContent" class="tab-content">
+          <!-- Tab content will be loaded here -->
+        </div>
+      </div>
     </section>
     
     
@@ -273,6 +353,60 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/shadow.js"></script>
+
+  <!-- Add tab content script -->
+  <script src="assets/js/tab-content.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabContent = document.getElementById('tabContent');
+      const tabButtons = document.querySelectorAll('.tab-button');
+      
+      // Function to show loading state
+      function showLoading() {
+        tabContent.innerHTML = '<div class="loading-spinner"><i class="bi bi-arrow-repeat"></i></div>';
+      }
+
+      // Function to show error message
+      function showError(message) {
+        tabContent.innerHTML = `<div class="error-message">${message}</div>`;
+      }
+
+      // Function to load tab content
+      function loadTab(tabId) {
+        showLoading();
+        
+        try {
+          const content = window.loadTabContent(tabId);
+          if (content) {
+            tabContent.innerHTML = content;
+            // Reinitialize AOS for new content
+            AOS.refresh();
+          } else {
+            showError('Content not found for this tab.');
+          }
+        } catch (error) {
+          showError('Error loading tab content. Please try again.');
+          console.error('Error:', error);
+        }
+      }
+
+      // Add click event listeners to tab buttons
+      tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Update active state
+          tabButtons.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+
+          // Load tab content
+          const tabId = button.dataset.tab;
+          loadTab(tabId);
+        });
+      });
+
+      // Load initial tab
+      loadTab('apartments');
+    });
+  </script>
 
 </body>
 
