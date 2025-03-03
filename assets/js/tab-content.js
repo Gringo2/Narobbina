@@ -76,7 +76,7 @@ const tabContent = {
         breadcrumbs: {
             title: "Smart Home Security",
             subtitle: "Protecting what matters most",
-            background: "assets/img/hero-carousel/hero-carousel-1.jpg"
+            background: "assets/img/solutions/ap-home.jpg"
         },
         overview: {
             title: "Smart Home Security",
@@ -99,24 +99,24 @@ const tabContent = {
                     text: "Mobile Control – Manage your security system from anywhere using our intuitive mobile app."
                 }
             ],
-            image: "assets/img/Solutions/Apartment/apt-hero.jpg"
+            image: "assets/img/Solutions/ap-hero.jpg"
         },
         pageContent: {
             title: "Key Security Features",
             subtitle: "Comprehensive protection for your home and family",
             cards: [
                 {
-                    image: "assets/img/Solutions/Apartment/access-control.jpg",
+                    image: "assets/img/Solutions/home-sec.jpg",
                     title: "Smart Monitoring",
                     description: "Advanced monitoring systems with AI-powered threat detection and instant notifications."
                 },
                 {
-                    image: "assets/img/Solutions/Apartment/property-management.jpg",
+                    image: "assets/img/Solutions/Apartment/access-control.jpg",
                     title: "Access Control",
                     description: "Smart locks and access management systems for secure entry and remote control."
                 },
                 {
-                    image: "assets/img/Solutions/Apartment/resident-exprience.jpg",
+                    image: "assets/img/Solutions/home-automation.jpg",
                     title: "Home Automation",
                     description: "Integrate security with smart home features for enhanced convenience and control."
                 }
@@ -141,7 +141,7 @@ const tabContent = {
             ],
             downloadLink: "assets/downloads/Smart-Home-Security.pdf",
             downloadName: "Narobbina-Smart-Home-Security.pdf",
-            image: "assets/img/Solutions/Apartment/feature-download.jpg"
+            image: "assets/img/Solutions/down.jpg"
         }
     },
     retail: {
@@ -171,24 +171,24 @@ const tabContent = {
                     text: "Security Solutions – Comprehensive retail security with surveillance and loss prevention."
                 }
             ],
-            image: "assets/img/Solutions/Apartment/apt-hero.jpg"
+            image: "assets/img/Solutions/rt-hero.jpg"
         },
         pageContent: {
             title: "Key Retail Features",
             subtitle: "Smart solutions for modern retail operations",
             cards: [
                 {
-                    image: "assets/img/Solutions/Apartment/access-control.jpg",
+                    image: "assets/img/Solutions/analytics.jpg",
                     title: "Smart Analytics",
                     description: "Real-time analytics and insights for better business decisions and customer understanding."
                 },
                 {
-                    image: "assets/img/Solutions/Apartment/property-management.jpg",
+                    image: "assets/img/Solutions/inventory.jpg",
                     title: "Inventory Control",
                     description: "Automated inventory management with real-time tracking and smart restocking."
                 },
                 {
-                    image: "assets/img/Solutions/Apartment/resident-exprience.jpg",
+                    image: "assets/img/Solutions/theft.jpg",
                     title: "Security Systems",
                     description: "Advanced security solutions with surveillance and theft prevention features."
                 }
@@ -213,7 +213,7 @@ const tabContent = {
             ],
             downloadLink: "assets/downloads/Smart-Retail.pdf",
             downloadName: "Narobbina-Smart-Retail.pdf",
-            image: "assets/img/Solutions/Apartment/feature-download.jpg"
+            image: "assets/img/Solutions/transform.jpg"
         }
     },
     warehouse: {
@@ -243,24 +243,24 @@ const tabContent = {
                     text: "Security Solutions – Comprehensive warehouse security with surveillance and access control."
                 }
             ],
-            image: "assets/img/Solutions/Apartment/apt-hero.jpg"
+            image: "assets/img/Solutions/wh-hero.jpg"
         },
         pageContent: {
             title: "Key Warehouse Features",
             subtitle: "Smart solutions for modern warehouse operations",
             cards: [
                 {
-                    image: "assets/img/Solutions/Apartment/access-control.jpg",
+                    image: "assets/img/Solutions/invent.jpg",
                     title: "Inventory Control",
                     description: "Advanced inventory management with real-time tracking and automated alerts."
                 },
                 {
-                    image: "assets/img/Solutions/Apartment/property-management.jpg",
+                    image: "assets/img/Solutions/robot.jpg",
                     title: "Smart Automation",
                     description: "Robotic solutions and automated systems for efficient material handling."
                 },
                 {
-                    image: "assets/img/Solutions/Apartment/resident-exprience.jpg",
+                    image: "assets/img/Solutions/surviellance.jpg",
                     title: "Security Systems",
                     description: "Comprehensive security with surveillance and access control features."
                 }
@@ -285,7 +285,7 @@ const tabContent = {
             ],
             downloadLink: "assets/downloads/Smart-Warehouse.pdf",
             downloadName: "Narobbina-Smart-Warehouse.pdf",
-            image: "assets/img/Solutions/Apartment/feature-download.jpg"
+            image: "assets/img/Solutions/wpage.jpg"
         }
     },
     hotel: {
@@ -315,24 +315,24 @@ const tabContent = {
                     text: "Asset Protection – Secure storage solutions and real-time monitoring of valuable assets."
                 }
             ],
-            image: "assets/img/Solutions/Apartment/apt-hero.jpg"
+            image: "assets/img/Solutions/ht-hero.jpg"
         },
         pageContent: {
             title: "Key Hotel Features",
             subtitle: "Smart solutions for modern hospitality management",
             cards: [
                 {
-                    image: "assets/img/Solutions/Apartment/access-control.jpg",
+                    image: "assets/img/Solutions/guest.jpg",
                     title: "Guest Experience",
                     description: "Enhance guest satisfaction with seamless access control, automated check-in, and smart room features."
                 },
                 {
-                    image: "assets/img/Solutions/Apartment/property-management.jpg",
+                    image: "assets/img/Solutions/staff.jpg",
                     title: "Staff Management",
                     description: "Optimize staff operations with advanced access control and monitoring systems."
                 },
                 {
-                    image: "assets/img/Solutions/Apartment/resident-exprience.jpg",
+                    image: "assets/img/Solutions/monitor.jpg",
                     title: "Security Systems",
                     description: "Comprehensive security with 24/7 surveillance and intelligent monitoring solutions."
                 }
@@ -357,7 +357,7 @@ const tabContent = {
             ],
             downloadLink: "assets/downloads/Smart-Hotel.pdf",
             downloadName: "Narobbina-Smart-Hotel-Solutions.pdf",
-            image: "assets/img/Solutions/Apartment/feature-download.jpg"
+            image: "assets/img/Solutions/hdown.jpg"
         }
     },
     school: {
@@ -387,24 +387,24 @@ const tabContent = {
                     text: "Emergency Systems – Integrated alert systems with instant notification capabilities."
                 }
             ],
-            image: "assets/img/Solutions/Apartment/apt-hero.jpg"
+            image: "assets/img/Solutions/sc-hero.jpg"
         },
         pageContent: {
             title: "Key School Features",
             subtitle: "Smart solutions for educational institution security",
             cards: [
                 {
-                    image: "assets/img/Solutions/Apartment/access-control.jpg",
+                    image: "assets/img/Solutions/campus.jpg",
                     title: "Campus Security",
                     description: "Complete security coverage with integrated systems for all school zones and facilities."
                 },
                 {
-                    image: "assets/img/Solutions/Apartment/property-management.jpg",
+                    image: "assets/img/Solutions/ac.jpg",
                     title: "Access Management",
                     description: "Smart access control systems for different user groups and areas."
                 },
                 {
-                    image: "assets/img/Solutions/Apartment/resident-exprience.jpg",
+                    image: "assets/img/Solutions/emergency.jpg",
                     title: "Emergency Response",
                     description: "Quick response systems with automated alerts and communication protocols."
                 }
@@ -429,7 +429,7 @@ const tabContent = {
             ],
             downloadLink: "assets/downloads/Smart-School.pdf",
             downloadName: "Narobbina-Smart-School-Solutions.pdf",
-            image: "assets/img/Solutions/Apartment/feature-download.jpg"
+            image: "assets/img/Solutions/envt.jpg"
         }
     },
     healthcare: {
@@ -1429,8 +1429,8 @@ const styles = `
 
         .ebrochure-icon {
             position: absolute;
-            bottom: -20px;
-            right: -20px;
+            bottom: 20px;
+            right: 20px;
             width: 60px;
             height: 60px;
             background: #feb900;
