@@ -420,13 +420,10 @@
     </section><!-- End Stats Counter Section -->
 
     <section>
-
-      <div class=" section-header">
-        <h2>Our Services</h2>
-        <!-- <p>Lorum Ipsum Dolor sit amet</p> -->
+      <div class="section-header text-center">
+        <h2 class="mb-3">Our Services</h2>
       </div>
       <services-component>
-      
       </services-component>
         
       <div style="display: flex; justify-content: center; margin-top: 50px !important;">
@@ -435,16 +432,72 @@
     </section>
    
      <section style="background: white;">
-      <div class="section-header">
-        <h2>Solutions for Bussiness Scenarios.</h2>
-        <p>Here are some of our solutions</p>
+      <div class="section-header text-center">
+        <h2 class="mb-3">Solutions for Business Scenarios</h2>
+        <p class="mb-4">Here are some of our solutions</p>
       </div>
 
+      <style>
+        .section-header {
+          padding: 2rem 0;
+          position: static;
+        }
 
-      <!-- <solution-component>
+        .section-header h2 {
+          color: #001f8d;
+          font-size: 2.5rem;
+          font-weight: 700;
+          margin-bottom: 1rem;
+          text-align: center;
+          position: static;
+          display: block;
+          border: none;
+        }
 
-      </solution-component> -->
+        .section-header h2::before,
+        .section-header h2::after {
+          display: none;
+        }
 
+        .section-header p {
+          color: #666;
+          font-size: 1.1rem;
+          margin-bottom: 2rem;
+          text-align: center;
+        }
+
+        @media (max-width: 768px) {
+          .section-header {
+            padding: 1.5rem 0;
+          }
+
+          .section-header h2 {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+          }
+
+          .section-header p {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .section-header {
+            padding: 1rem 0;
+          }
+
+          .section-header h2 {
+            font-size: 1.75rem;
+            margin-bottom: 0.5rem;
+          }
+
+          .section-header p {
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+          }
+        }
+      </style>
 
       <!-- Solutions Card Slider -->
       <div class="container">
@@ -716,8 +769,8 @@
       
         
         <section id="clients" class="clients support" style="padding-bottom: 0px; padding: 24px 0px !important;">
-          <div class="section-header">
-            <h2>Clients</h2>
+          <div class="section-header text-center">
+            <h2 class="mb-3">Clients</h2>
           </div>
           <div class="container" >
       
@@ -933,6 +986,13 @@
     ]
   }
   </script>
+
+  <style>
+    .solutions-slider .swiper-pagination,
+    .swiper-container .swiper-pagination {
+      display: none !important;
+    }
+  </style>
 
 </body>
 
