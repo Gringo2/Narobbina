@@ -247,7 +247,7 @@
 
   <main id="main">
      <!-- ======= Breadcrumbs ======= -->
-     <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/hero-carousel/hero-carousel-1.jpg');">
+     <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/breadcrumbs-bg5.jpg');">
       <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
         <h2>Solutions</h2>
@@ -275,7 +275,6 @@
               <button class="tab-button" data-tab="warehouse">Smart Warehouse</button>
               <button class="tab-button" data-tab="hotel">Smart Hotel</button>
               <button class="tab-button" data-tab="school">Smart School</button>
-              <button class="tab-button" data-tab="healthcare">Healthcare</button>
             </div>
           </div>
           <button class="scroll-arrow right" id="scrollRight">
@@ -474,6 +473,14 @@
         }
       }
 
+      // Function to get URL parameters
+      function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        const regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        const results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+      }
+
       // Add click event listeners to tab buttons
       tabButtons.forEach(button => {
         button.addEventListener('click', () => {
@@ -487,8 +494,17 @@
         });
       });
 
-      // Load initial tab
-      loadTab('apartments');
+      // Get tab from URL parameter or default to 'apartments'
+      const tabFromUrl = getUrlParameter('tab') || 'apartments';
+      
+      // Find and activate the corresponding tab button
+      const targetTabButton = Array.from(tabButtons).find(button => button.dataset.tab === tabFromUrl);
+      if (targetTabButton) {
+        targetTabButton.click();
+      } else {
+        // If tab not found, load default tab
+        loadTab('apartments');
+      }
     });
   </script>
 
@@ -520,11 +536,10 @@
       function updateArrowVisibility() {
         const isAtStart = tabButtons.scrollLeft === 0;
         const isAtEnd = tabButtons.scrollLeft >= (tabButtons.scrollWidth - tabButtons.clientWidth);
+        const hasOverflow = tabButtons.scrollWidth > tabButtons.clientWidth;
 
-        scrollLeftBtn.style.opacity = isAtStart ? '0.5' : '1';
-        scrollRightBtn.style.opacity = isAtEnd ? '0.5' : '1';
-        scrollLeftBtn.style.pointerEvents = isAtStart ? 'none' : 'auto';
-        scrollRightBtn.style.pointerEvents = isAtEnd ? 'none' : 'auto';
+        scrollLeftBtn.style.display = hasOverflow && !isAtStart ? 'flex' : 'none';
+        scrollRightBtn.style.display = hasOverflow && !isAtEnd ? 'flex' : 'none';
       }
 
       // Listen for scroll events
