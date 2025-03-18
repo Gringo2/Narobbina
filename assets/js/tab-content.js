@@ -845,7 +845,7 @@ const styles = `
             width: 60px;
             height: 60px;
             border: 4px solid rgba(0, 31, 141, 0.1);
-            border-top: 4px solid #001f8d;
+            border-top: 4px solid #c13a3c;
             border-radius: 50%;
             animation: spin 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
             box-shadow: 0 0 15px rgba(0, 31, 141, 0.2);
@@ -853,7 +853,7 @@ const styles = `
 
         .loading-text {
             margin-top: 20px;
-            color: #001f8d;
+            color: #c13a3c;
             font-size: 1.2rem;
             font-weight: 500;
             opacity: 0;
@@ -1020,7 +1020,7 @@ const styles = `
             left: 50%;
             width: 0;
             height: 2px;
-            background: #001f8d;
+            background: #c13a3c;
             transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
             transform: translateX(-50%);
         }
@@ -1098,7 +1098,7 @@ const styles = `
 
         .tab-btn.active {
             color: #fff;
-            background: #001f8d;
+            background: #c13a3c;
             box-shadow: 0 4px 15px rgba(0,31,141,0.2);
         }
 
@@ -1206,7 +1206,7 @@ const styles = `
         }
 
         .overview-text h1 {
-            color: #001f8d;
+            color: #c13a3c;
             font-size: clamp(1.8rem, 4vw, 2.5rem);
             margin: 0;
             line-height: 1.2;
@@ -1275,7 +1275,7 @@ const styles = `
         }
 
         .page-title h1 {
-            color: #001f8d;
+            color: #c13a3c;
             font-size: 2.5rem;
             margin-bottom: 1rem;
         }
@@ -1324,7 +1324,7 @@ const styles = `
         }
 
         .page-card-content h3 {
-            color: #001f8d;
+            color: #c13a3c;
             font-size: 1.5rem;
             margin-bottom: 1rem;
         }
@@ -1353,7 +1353,7 @@ const styles = `
         }
 
         .ebrochure-text h2 {
-            color: #001f8d;
+            color: #c13a3c;
             font-size: 2.5rem;
             margin-bottom: 1.5rem;
         }
@@ -1403,7 +1403,7 @@ const styles = `
         }
 
         .ebrochure-btn:hover {
-            background: #001f8d;
+            background: #c13a3c;
             transform: translateY(-2px);
         }
 
@@ -1503,7 +1503,7 @@ const styles = `
         }
 
         .overview-text h1 {
-            color: #001f8d;
+            color: #c13a3c;
             font-size: clamp(1.8rem, 4vw, 2.5rem);
             margin-bottom: 0;
             line-height: 1.2;

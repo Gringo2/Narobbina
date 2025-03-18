@@ -71,7 +71,7 @@
       width: 40px;
       height: 40px;
       background: #fff;
-      border: 2px solid #001f8d;
+      border: 2px solid #c13a3c;
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -83,7 +83,7 @@
     }
 
     .scroll-arrow:hover {
-      background: #001f8d;
+      background: #c13a3c;
       color: #fff;
     }
 
@@ -97,7 +97,7 @@
 
     .scroll-arrow i {
       font-size: 1.2rem;
-      color: #001f8d;
+      color: #c13a3c;
       transition: all 0.3s ease;
     }
 
@@ -127,27 +127,53 @@
       scroll-behavior: smooth;
     }
 
-    .tab-button {
+    .solutions-tabs .tab-button {
       padding: 0.75rem 1.25rem;
       background: #fff;
-      border: 2px solid #001f8d;
+      border: 2px solid #c13a3c !important;
       border-radius: 30px;
-      color: #001f8d;
+      color: #c13a3c !important;
       font-weight: 600;
       cursor: pointer;
       transition: all 0.3s ease;
       flex: 0 0 auto;
       white-space: nowrap;
+      position: relative;
+      z-index: 1;
     }
 
-    .tab-button:hover {
-      background: #001f8d;
-      color: #fff;
+    .solutions-tabs .tab-button:hover {
+      background: #c13a3c !important;
+      color: #fff !important;
+      border-color: #c13a3c !important;
     }
 
-    .tab-button.active {
-      background: #001f8d;
-      color: #fff;
+    .solutions-tabs .tab-button.active {
+      background: #c13a3c !important;
+      color: #fff !important;
+      border-color: #c13a3c !important;
+    }
+
+    /* Override any other styles that might affect the tabs */
+    .tab-buttons .tab-button,
+    .tab-nav-wrapper .tab-button {
+      background: #fff !important;
+      border: 2px solid #c13a3c !important;
+      color: #c13a3c !important;
+    }
+
+    .tab-buttons .tab-button:hover,
+    .tab-nav-wrapper .tab-button:hover {
+      background: #c13a3c !important;
+      color: #fff !important;
+      border-color: #c13a3c !important;
+    }
+
+    .tab-buttons .tab-button.active,
+    .tab-nav-wrapper .tab-button.active {
+      background: #c13a3c !important;
+      color: #fff !important;
+      border-color: #c13a3c !important;
     }
 
     .tab-content {
@@ -160,7 +186,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      color: #001f8d;
+      color: #c13a3c;
       font-size: 2rem;
     }
 
@@ -194,6 +220,21 @@
       .tab-buttons-container {
         margin: 0 40px;
       }
+    }
+
+    .nav-tabs .nav-link {
+      color: #c13a3c;
+      font-weight: 600;
+      border: none;
+      padding: 1rem 2rem;
+      margin: 0 0.5rem;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-tabs .nav-link.active {
+      background-color: #c13a3c;
+      color: white;
     }
   </style>
 </head>
